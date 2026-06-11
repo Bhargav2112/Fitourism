@@ -18,7 +18,6 @@ export default function Home() {
     <main className="min-h-screen overflow-hidden bg-white">
       <Navbar />
       <HeroSlider />
-      <TrustIndicators />
       <FeaturedPackages />
       <DomesticPackages />
       <InternationalPackages />
@@ -27,6 +26,7 @@ export default function Home() {
       <VisaServices />
       <ReviewsSection />
       <ContactSection />
+      <TrustIndicators />
       <Footer />
       <WhatsAppFloat />
     </main>
