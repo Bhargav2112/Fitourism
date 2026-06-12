@@ -24,6 +24,7 @@ export const packages = [
     type: "Domestic",
     typeBadge: "domestic",
     image: "https://media.base44.com/images/public/6a267b399614fa89b89b9bea/2c11a5837_FITourism-Kashmir-Post-03-06-2026.jpg",
+    cardImage: "/kashmir-card.jpg",
     highlights: ["Shikara Ride on Dal Lake", "Gulmarg Excursion", "Pahalgam Sightseeing", "Breakfast & Dinner"],
   },
   {
@@ -36,6 +37,7 @@ export const packages = [
     type: "Pilgrimage",
     typeBadge: "pilgrimage",
     image: "https://media.base44.com/images/public/6a267b399614fa89b89b9bea/73f8568c3_Fitourism-Kashmir-AmarnathMata-Vaishno-Devi-Post-01-06-2026.jpg",
+    cardImage: "/kashmir-amarnath-card.jpg",
     highlights: ["Amarnath Ji Darshan", "Mata Vaishno Devi Darshan", "Gulmarg Excursion", "Private AC Ertiga Cab"],
   },
   {
@@ -48,6 +50,7 @@ export const packages = [
     type: "Domestic",
     typeBadge: "domestic",
     image: "https://media.base44.com/images/public/6a267b399614fa89b89b9bea/a8a8667c6_FITourism-Goa-Post-28-05-2026.jpg",
+    cardImage: "/goa-card.jpg",
     highlights: ["Fort Aguada", "Vagator Beach", "Miramar Beach", "Breakfast & Dinner"],
   },
   {
@@ -60,6 +63,7 @@ export const packages = [
     type: "Domestic",
     typeBadge: "domestic",
     image: "https://media.base44.com/images/public/6a267b399614fa89b89b9bea/ee124460d_FiTourism-Simla-Manali-08-06-2026.jpg",
+    cardImage: "/shimla-manali-card.jpg",
     highlights: ["Solang Valley", "Kullu Valley", "Kufri Excursion", "Delhi/Chandigarh Pickup"],
   },
   {
@@ -72,6 +76,7 @@ export const packages = [
     type: "International",
     typeBadge: "international",
     image: "https://media.base44.com/images/public/6a267b399614fa89b89b9bea/049e4a316_FiTourism-Pattaya-Post-05-06-2026.jpg",
+    cardImage: "/pattaya-card.jpg",
     highlights: ["Coral Island by Speedboat", "Alcazar Show", "Gems Gallery", "Airport Transfers"],
   },
   {
@@ -84,6 +89,7 @@ export const packages = [
     type: "International",
     typeBadge: "international",
     image: "https://media.base44.com/images/public/6a267b399614fa89b89b9bea/db686c0b8_FITourism-PattayaBangkok-19-05-2026.jpg",
+    cardImage: "/pattaya-bangkok-card.jpg",
     highlights: ["Coral Island Tour", "Bangkok Temple Tour", "Alcazar Show", "Daily Breakfast"],
   },
   {
@@ -96,6 +102,7 @@ export const packages = [
     type: "International",
     typeBadge: "international",
     image: "https://media.base44.com/images/public/6a267b399614fa89b89b9bea/cc1fde48f_FITourism-Dubai-Family-Package-21-05-2026.jpg",
+    cardImage: "/dubai-card.png",
     highlights: ["UAE Visa Included", "Dhow Cruise Dinner", "Desert Safari", "Abu Dhabi City Tour"],
   },
   {
@@ -108,6 +115,7 @@ export const packages = [
     type: "International",
     typeBadge: "international",
     image: "https://media.base44.com/images/public/6a267b399614fa89b89b9bea/29847c0ab_Fitourism-Azerbaijan-04-06-2026.jpg",
+    cardImage: "/azerbaijan-card.png",
     highlights: ["Baku City Tour", "Absheron Tour", "Shahdag Adventure", "Gabala Excursion"],
   },
 ];
@@ -142,10 +150,6 @@ export const visaServices = [
 
 export const heroSlides = [
   {
-    image: "https://images.unsplash.com/photo-1571406655375-75a4b5cfcd0d?w=1600&q=80",
-    label: "Himalayas, India",
-  },
-  {
     image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1600&q=80",
     label: "Dubai, UAE",
   },
@@ -154,7 +158,15 @@ export const heroSlides = [
     label: "Pattaya, Thailand",
   },
   {
-    image: "https://images.unsplash.com/photo-1601581975053-7c899da7347e?w=1600&q=80",
-    label: "Goa, India",
+    image: "/venice-banner.jpg",
+    label: "Venice, Italy",
+  },
+  {
+    image: "/bangkok-banner.jpg",
+    label: "Bangkok, Thailand",
+  },
+  {
+    image: "/paris-banner.jpg",
+    label: "Paris, France",
   },
 ];

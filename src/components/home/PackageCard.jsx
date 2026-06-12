@@ -25,7 +25,7 @@ export default function PackageCard({ pkg, index = 0, onClick, onViewDetails }) 
       {/* Image */}
       <div className="relative h-52 overflow-hidden cursor-pointer" onClick={() => onViewDetails?.(pkg)}>
         <img
-          src={pkg.image}
+          src={pkg.cardImage || pkg.image}
           alt={pkg.title}
           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
         />

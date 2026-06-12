@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "@/components/home/Navbar";
 import HeroSlider from "@/components/home/HeroSlider";
 import TrustIndicators from "@/components/home/TrustIndicators";
-import FeaturedPackages from "@/components/home/FeaturedPackages";
 import DomesticPackages from "@/components/home/DomesticPackages";
 import InternationalPackages from "@/components/home/InternationalPackages";
 import OurServices from "@/components/home/OurServices";
@@ -18,7 +17,6 @@ export default function Home() {
     <main className="min-h-screen overflow-hidden bg-white">
       <Navbar />
       <HeroSlider />
-      <FeaturedPackages />
       <DomesticPackages />
       <InternationalPackages />
       <OurServices />

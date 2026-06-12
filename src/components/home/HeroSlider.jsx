@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRight, MessageCircle } from "lucide-react";
-import { heroSlides, WHATSAPP_NUMBER } from "./fitourism-data";
+import { ArrowRight } from "lucide-react";
+import { heroSlides } from "./fitourism-data";
 
 export default function HeroSlider() {
   const [index, setIndex] = useState(0);
@@ -34,20 +34,12 @@ export default function HeroSlider() {
       {/* CTA Buttons */}
       <div className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 flex-wrap justify-center gap-3 px-4 sm:bottom-12 lg:bottom-16 lg:left-12 lg:translate-x-0 lg:justify-start">
         <button
-          onClick={() => document.getElementById("packages")?.scrollIntoView({ behavior: "smooth" })}
+          onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
           className="inline-flex h-11 items-center gap-2 rounded-full px-7 text-sm font-bold text-white shadow-lg transition-all hover:shadow-xl"
           style={{ background: "linear-gradient(135deg, #5B16E8, #7C3AED)" }}
         >
           Explore Packages <ArrowRight className="h-4 w-4" />
         </button>
-        <a
-          href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi, I'd like a free consultation for a travel package.`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex h-11 items-center gap-2 rounded-full border-2 border-[#25D366]/60 bg-[#25D366]/15 px-7 text-sm font-bold text-white backdrop-blur-sm transition-all hover:bg-[#25D366]/25"
-        >
-          <MessageCircle className="h-4 w-4" /> WhatsApp Inquiry
-        </a>
       </div>
 
       {/* Slide indicators */}

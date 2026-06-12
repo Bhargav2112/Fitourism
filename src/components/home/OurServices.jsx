@@ -1,26 +1,87 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Compass, Plane, Train, Building2, FileCheck, Users, Ship, Umbrella, Heart, ShieldCheck, Globe } from "lucide-react";
+import { MessageCircle } from "lucide-react";
+import { WHATSAPP_NUMBER } from "./fitourism-data";
 
 const services = [
-  { icon: FileCheck, title: "Visa Assistance", color: "#5B16E8" },
-  { icon: Plane, title: "Flight Booking", color: "#3B82F6" },
-  { icon: Train, title: "Train Booking", color: "#10B981" },
-  { icon: Building2, title: "Hotel Booking", color: "#F68B6A" },
-  { icon: FileCheck, title: "Passport Assistance", color: "#8B5CF6" },
-  { icon: Compass, title: "Domestic Tour Packages", color: "#3B0FA8" },
-  { icon: Globe, title: "International Tour Packages", color: "#F4B642" },
-  { icon: Heart, title: "Honeymoon Packages", color: "#EC4899" },
-  { icon: Users, title: "Group Tours", color: "#06B6D4" },
-  { icon: Ship, title: "Cruise Holidays", color: "#1E40AF" },
-  { icon: Umbrella, title: "Customized Holiday Packages", color: "#F97316" },
-  { icon: ShieldCheck, title: "Travel Insurance", color: "#059669" },
+  {
+    title: "Visa Assistance",
+    description: "Expert visa processing services with high success rates for tourism, business, and study.",
+    image: "/visa-assistance.png",
+    whatsappText: "Hi, I'm interested in Visa Assistance services.",
+  },
+  {
+    title: "Passport Assistance",
+    description: "Expert guidance and support for new passport applications, renewals, and quick processing.",
+    image: "/passport-assistance.png",
+    whatsappText: "Hi, I'm interested in Passport Assistance.",
+  },
+  {
+    title: "Flight Booking",
+    description: "Get the best flight fares for domestic and international travel with flexible booking options.",
+    image: "/flight-booking.png",
+    whatsappText: "Hi, I'm interested in Flight Booking.",
+  },
+  {
+    title: "Hotel Booking",
+    description: "Get the best deals on luxury resorts, business hotels, and budget stays worldwide.",
+    image: "/hotel-booking.png",
+    whatsappText: "Hi, I'm interested in Hotel Booking.",
+  },
+  {
+    title: "Train Booking",
+    description: "Convenient and confirmed train ticket bookings for hassle-free rail journeys across India.",
+    image: "/train-booking.png",
+    whatsappText: "Hi, I'm interested in Train Booking.",
+  },
+  {
+    title: "Domestic Tour Packages",
+    description: "Explore the diverse landscapes, rich culture, and heritage of India with curated packages.",
+    image: "/domestic-packages.png",
+    whatsappText: "Hi, I'm interested in Domestic Tour Packages.",
+  },
+  {
+    title: "International Tour Packages",
+    description: "Discover exotic destinations across the globe with hassle-free and affordable itineraries.",
+    image: "/international-packages.jpg",
+    whatsappText: "Hi, I'm interested in International Tour Packages.",
+  },
+  {
+    title: "Customized Holiday Packages",
+    description: "Tailor-made itineraries designed to match your unique travel style, budget, and preferences.",
+    image: "/customized-packages.png",
+    whatsappText: "Hi, I'm interested in Customized Holiday Packages.",
+  },
+  {
+    title: "Honeymoon Packages",
+    description: "Create unforgettable romantic memories with our specially crafted, handpicked couple getaways.",
+    image: "/honeymoon-packages.png",
+    whatsappText: "Hi, I'm interested in Honeymoon Packages.",
+  },
+  {
+    title: "Group Tours",
+    description: "Fun-filled, guided travel experiences perfect for families, friends, and corporate groups.",
+    image: "/group-tours.png",
+    whatsappText: "Hi, I'm interested in Group Tours.",
+  },
+  {
+    title: "Cruise Holidays",
+    description: "Sail away on luxury liners to exotic international destinations with all-inclusive premium stays.",
+    image: "/cruise-holidays.jpg",
+    whatsappText: "Hi, I'm interested in Cruise Holidays.",
+  },
+  {
+    title: "Travel Insurance",
+    description: "Secure your journey against unforeseen events, medical emergencies, baggage loss, and cancellations.",
+    image: "/travel-insurance.png",
+    whatsappText: "Hi, I'm interested in Travel Insurance.",
+  },
 ];
 
 export default function OurServices() {
   return (
     <section id="services" className="px-4 py-20 lg:px-8 bg-[#EBF2FF]">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -31,27 +92,48 @@ export default function OurServices() {
             Our <span className="text-gradient-purple">Services</span>
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-base text-slate-500">
-            End-to-end travel solutions — from visas and flights to custom holiday planning.
+            End-to-end travel solutions — from custom holiday planning and honeymoon getaways to cruises and travel insurance.
           </p>
         </motion.div>
 
-        <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="flex flex-wrap justify-center gap-8">
           {services.map((s, i) => (
             <motion.div
               key={s.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.04 }}
-              className="flex items-center gap-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition-all duration-300 hover:border-[#5B16E8]/30 hover:shadow-md"
+              transition={{ delay: i * 0.1 }}
+              className="flex w-full max-w-sm flex-col overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
-              <div
-                className="grid h-11 w-11 shrink-0 place-items-center rounded-xl"
-                style={{ background: `${s.color}15` }}
-              >
-                <s.icon className="h-5 w-5" style={{ color: s.color }} />
+              {/* Card Image */}
+              <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
+                <img
+                  src={s.image}
+                  alt={s.title}
+                  className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                />
               </div>
-              <span className="text-sm font-bold text-slate-700">{s.title}</span>
+
+              {/* Card Body */}
+              <div className="flex flex-1 flex-col p-6 justify-between">
+                <div className="text-center mb-6">
+                  <h3 className="text-xl font-bold text-slate-800 mb-2">{s.title}</h3>
+                  <p className="text-sm text-slate-500 leading-relaxed">{s.description}</p>
+                </div>
+
+                {/* Centered WhatsApp Button */}
+                <div className="flex justify-center mt-auto">
+                  <a
+                    href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(s.whatsappText)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-6 py-2.5 text-sm font-bold text-white shadow-md transition-all hover:bg-[#20ba5a] hover:shadow-lg"
+                  >
+                    <MessageCircle className="h-4 w-4 fill-current" /> Inquire on WhatsApp
+                  </a>
+                </div>
+              </div>
             </motion.div>
           ))}
         </div>
