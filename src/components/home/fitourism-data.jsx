@@ -129,14 +129,12 @@ export const visaServices = [
     price: "₹8,000",
     description: "Express Visit Visa for 30 days. Fast processing & easy approval.",
     features: ["Express Processing", "Easy Approval", "Trusted Service", "Document Guidance"],
-    flag: "🇦🇪",
   },
   {
     title: "Dubai 60 Days Express Visa",
     price: "₹14,000",
     description: "Extended 60-day Visit Visa for longer stays and exploration.",
     features: ["60 Day Stay", "Express Processing", "Easy Approval", "Trusted Service"],
-    flag: "🇦🇪",
     popular: true,
   },
   {
@@ -144,7 +142,6 @@ export const visaServices = [
     price: "₹22,000",
     description: "Multiple Entry Visit Visa for 60 days. Perfect for frequent travelers.",
     features: ["Multiple Entry", "60 Day Validity", "Maximum Flexibility", "Priority Service"],
-    flag: "🇦🇪",
   },
 ];
 

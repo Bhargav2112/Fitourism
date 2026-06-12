@@ -68,16 +68,16 @@ export default function Footer() {
             <h4 className="mb-5 text-xs font-extrabold uppercase tracking-widest text-white/50">Get In Touch</h4>
             <ul className="space-y-4 text-sm text-white/40">
               <li className="flex items-start gap-3">
-                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-[#5B16E8]" /> {PHONE}
+                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-[#F4B642]" /> {PHONE}
               </li>
               <li className="flex items-start gap-3">
-                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-[#F68B6A]" /> {EMAIL}
+                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-[#F4B642]" /> {EMAIL}
               </li>
               <li className="flex items-start gap-3">
                 <Globe className="mt-0.5 h-4 w-4 shrink-0 text-[#F4B642]" /> www.fitourism.com
               </li>
               <li className="flex items-start gap-3">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#3B0FA8]" /> {ADDRESS}
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#F4B642]" /> {ADDRESS}
               </li>
             </ul>
           </div>

@@ -70,12 +70,6 @@ const services = [
     image: "/cruise-holidays.jpg",
     whatsappText: "Hi, I'm interested in Cruise Holidays.",
   },
-  {
-    title: "Travel Insurance",
-    description: "Secure your journey against unforeseen events, medical emergencies, baggage loss, and cancellations.",
-    image: "/travel-insurance.png",
-    whatsappText: "Hi, I'm interested in Travel Insurance.",
-  },
 ];
 
 export default function OurServices() {
@@ -92,7 +86,7 @@ export default function OurServices() {
             Our <span className="text-gradient-purple">Services</span>
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-base text-slate-500">
-            End-to-end travel solutions — from custom holiday planning and honeymoon getaways to cruises and travel insurance.
+            End-to-end travel solutions — from custom holiday planning and honeymoon getaways to luxury cruises.
           </p>
         </motion.div>
 

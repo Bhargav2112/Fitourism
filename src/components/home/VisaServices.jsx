@@ -41,7 +41,6 @@ export default function VisaServices() {
                     Most Popular
                   </span>
                 )}
-                <div className="mb-3 text-4xl">{visa.flag}</div>
                 <h3 className="text-lg font-extrabold text-[#0f172a]">{visa.title}</h3>
                 <p className="mt-2 text-sm text-slate-500">{visa.description}</p>
                 <div className="my-5">
